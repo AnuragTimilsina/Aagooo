@@ -26,6 +26,9 @@ def main():
 
     image_directory = os.path.join(BASE_DIR, "saved_infer_image")
 
+    if not os.path.exists(image_directory):
+        os.makedirs(image_directory)
+
     # Running real time from webcam
     cap = cv2.VideoCapture(0)
     model = YOLO("fire.pt")

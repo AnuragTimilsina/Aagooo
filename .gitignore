@@ -3,6 +3,21 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# PyTorch model:
+yolov8n.pt
+yolov8s.pt
+
+# Video:
+fire2.mp4
+fire3.mp4
+
+# Model files:
+runs/
+test/
+train/
+valid/
+saved_infer_image/
+
 # C extensions
 *.so
 

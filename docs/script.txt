@@ -1,0 +1,86 @@
+Background
+
+Forest Fires
+
+According to Nepal Economic forum, majority of fires are uncontrolled. Alone in 2021, 6,279 fires were recorded and in 2023 the situation is expected to worsen. 
+
+Due to It's economical, ecological and environmental impact, the havoc and untold desctruction. These fire pose a grave threat to our nation and in some ways in our way of our life.
+
+We already have solution like NASA Modis for understanding the physical properties of the environment.
+
+[ MODIS photo ] 
+
+But the solution is too slow. How do we speed it up, more importantly how do we help our recovering forests so that community forest efforts can be more effective. 
+[ Community Forest ]
+
+Avoiding the damages of forest fire might help nepal achieve self sustaining forest economy and also help in fighting the global warming.
+[ Forest economy ]
+
+What if we can change the trajectory locally? Introducing the AI Crusade Forest Fire Detection Project
+
+[ Forest fire detection device B Roll]
+
+A Portable forest fire detection device powered by cutting edge computer vision capabilities that allows it to run on single board computers with cheap cameras. 
+
+[ fire.py on action ]
+
+<What is it>
+
+It is a pytorch model, fine tuned with YOLOv8n architecture. With OpenCV we enable real time video analysis for fire detectionwhich can run on cheap Single board computers 
+
+[ Video frame  + no internet connection ]
+
+ESP32 Microcontroller, A9G GPS and SIM module allows the deviceto communicate with forest rangers and provides them with important information about Position of the device where it detected the forest fire and the image 
+
+[ esp32 and a9g ringing forest rangers and conveying information animation, with forest fire image]
+
+Here is the prototype device in action
+[ show hardware b roll]
+
+The device that runs the model, and the microcontroller are on the same hotspot. device first detects the fire, then the GET request is sent to microcontroller. The microcontroller sends the AT command and then sends the SMS to apprpriate number as set by the parameter. THe ranger recieves the message and can take appropriate actions.   
+[ here we can show the demo ]
+
+Where can the device be fitted? we can currently think of it 
+* Drones
+  Occasional mapping drones can be fitted with the device and extra mapping features can also be added. 
+* On the top of hills, where there are telecom towers [ They will be the hotspot areas]. A large portion of our hilly areas will be covered by this and these kinds of location have high visibility and then can cover large distance
+
+
+What is the expected Cost of the device ?
+
+* with a single board computer , microcontroller and some additional modules, we can expect the cost to be about Rs.15k-20k which pales in comparision with respect to devestation caused by forest fires
+
+[ price related kei b roll]
+
+Further Improvement
+
+* Depth Perception will also allow us to exactly triangulate the position of forest fire. 
+[ forest fire ]
+* 360 cameras can be fitted
+* With other sensors fitted we can occasionally fly the geomapping drone which can detect other anomalies in forests.
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

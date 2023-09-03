@@ -26,6 +26,7 @@ We propose a portable forest Fire detection device. Tldr, it is a computer visio
 
 ## Steps for running the Fire inference Model
 - `pip3 install -r requirements.txt` 
+- `python3 fire.py`
 
 ## Steps For Hardware 
 
@@ -34,6 +35,13 @@ We propose a portable forest Fire detection device. Tldr, it is a computer visio
 </center>
 
 - The components should be connected according to schematics
+- Before uploading the code on `hardware/main.ino` change the following line to your SSID and password
+
+```c
+const char* Sim800Lid = "Your SSID";
+const char* paSim800Lword = "Your Password";
+```
+
 
 
 

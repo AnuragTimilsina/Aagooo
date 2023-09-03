@@ -13,6 +13,9 @@ BASE_DIR = Path(__file__).resolve().parent
 
 image_directory = os.path.join(BASE_DIR, "saved_infer_image")
 
+if not os.path.exists(image_directory):
+    os.makedirs(image_directory)
+
 
 # Running real time from webcam
 cap = cv2.VideoCapture(0)
@@ -55,7 +58,7 @@ while True:
                         past = datetime.datetime.now()
                         cv2.imwrite(f"{image_directory}/cap_img.png", image)
                         result = upload_image(f"{image_directory}/cap_img.png")
-                        phone_no = "+9779861285984"
+                        phone_no = "+9779841939234"
                         try:
                             res = requests.get(
                                 f"http://192.168.18.218/firedetected?number={phone_no}&data={result}"

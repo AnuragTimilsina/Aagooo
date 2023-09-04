@@ -42,6 +42,12 @@ const char* Sim800Lid = "Your SSID";
 const char* paSim800Lword = "Your Password";
 ```
 
+## Screenshots
+
+![image](./images/phone.png)
+![image2](./images/fire_detected.png)
+![image3](./images/serialMonitor.png)
+![image4](./images/windows_firedetected.png)
 
 
 
